@@ -27,6 +27,9 @@ class LinkedList {
         Node* head;
 
     public:
+        /**
+         * Construtor
+        */
         LinkedList() {
             head = nullptr;
         }
@@ -41,6 +44,9 @@ class LinkedList {
             head = newNode;
         }
 
+        /**
+         * Busca um elemento da Lista
+        */
         int buscarElementoLista(int value) 
         {
             Node* current = head;
@@ -62,6 +68,9 @@ class LinkedList {
             return resposta;
         }
 
+        /**
+         * Remove um elemento da lista
+        */
         void removerItemLista(int value)
         {
             Node* current = head;
@@ -85,6 +94,9 @@ class LinkedList {
             delete current;
         }
 
+        /**
+         * Imprime a lista
+        */
         void imprimirLista()
         {
             Node* current = head;
@@ -95,6 +107,9 @@ class LinkedList {
             cout << endl;
         }
 
+        /**
+         * Destrutor
+        */
         ~LinkedList() 
         {
             while (head != nullptr) {
